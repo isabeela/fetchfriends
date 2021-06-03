@@ -21,7 +21,7 @@ function quiz(documento) {
         quiz.appendChild(dest)
     })
 
-    document.body.appendChild(quiz);
+    const divQuiz = document.querySelector("#quiz").appendChild(quiz)
 }
 
 
