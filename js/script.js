@@ -4,15 +4,17 @@ function noticias (documento) {
     var noticia = document.createElement('div');
     var botao = document.createElement('a')
     var titulo = document.createElement('h1');
-    var verNoticia = documento.querySelectorAll(".item")
+    var verNoticia = documento.querySelectorAll(".card")
        verNoticia.forEach(div => {  
 
         titulo.innerHTML= "Notícias"
 
-       documento.querySelectorAll("article").forEach( noticia => {
-        noticia.style.width = "90%"
-        noticia.setAttribute('class', 'textos')
-       } )
+        documento.querySelectorAll(".card_content").forEach(titulo => {
+
+            titulo.style.width = "90%"
+            titulo.setAttribute('class', 'titulo')
+
+        })
 
         botao.innerHTML = "Ver todos"
         botao.setAttribute('class', 'botao')
@@ -23,11 +25,13 @@ function noticias (documento) {
         principal.setAttribute('class', 'destaque')
        
      
-       const indesejavel = documento.querySelectorAll(".post-cat, .post-author, .views, .comments, .date")
+        const indesejavel = documento.querySelectorAll(".post-categories, .post_meta, .entry_cats, .meta")
 
-       for (let t = 0; t < indesejavel.length; t++) {
-           indesejavel[t].remove()
-       }
+        for (let t = 0; t < indesejavel.length; t++) {
+            indesejavel[t].remove()
+        }
+ 
+ 
 
        for (let i = 3; i < verNoticia.length; i++) {
            verNoticia[i].style.display = "none"
@@ -134,11 +138,9 @@ function quiz(documento) {
 
 
 
-
-
 function home () {
 
-    fetch('https://cors-anywhere.herokuapp.com/https://mixdeseries.com.br/?s=friends')
+    fetch('https://cors-anywhere.herokuapp.com/https://sitedosgeeks.com/?s=friends')
     .then(resp => resp.text())
     .then (pg => {
         let dom = new DOMParser();
