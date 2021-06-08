@@ -104,7 +104,7 @@ div  {
 .destaque {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 53%;
     background-color: #fff;
     border-radius: 20px;
     padding: 10px;
@@ -112,16 +112,15 @@ div  {
 }
 
 .destaque img {
-  width: 500px;
-  height: 350px;
+  width: 530px;
+  height: 380px;
   border-radius: 20px;
 }
 
 .miniatura  {
    display: flex;
-    flex-direction: column;
-    width: 450px;
-    height: 250px;
+    width: 400px;
+    height: 215px;
     background-color: #fff;
     border-radius: 20px;
     padding: 10px;
@@ -132,8 +131,8 @@ div  {
 #segundo {
     display: flex;
     flex-wrap: wrap;
-    margin: -270px auto;
-    margin-left: 530px;
+    margin: -235px auto;
+    margin-left: 578px;
 }
 
 
@@ -143,17 +142,18 @@ div  {
     height: 150px;
     display: flex;
     margin-top: 0;
-    padding-right: 10px;
 }
 
-.miniatura .textos {
+.miniatura .titulo {
     display: flex;
-    font-size: 0.9rem;
+    height: 50px;
+    margin-top: 0;
+    font-size: 0.7rem;
 }
 
 
 
-  .item, .grid-base-post, .card-post, .personagens{
+  .card, .grid-base-post, .card-post, .personagens{
     display: flex;
     flex-wrap: wrap;
     width: 30%;
@@ -165,10 +165,15 @@ div  {
 
 
 
- .item img, .grid-base-post img, .card-post img {
+    .grid-base-post img, .card-post img {
    width: 300px;
    border-radius: 20px;
+}
 
+.card img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
 }
 
 
