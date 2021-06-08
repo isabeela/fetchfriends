@@ -225,12 +225,12 @@ p {
 @media (max-width: 800px) {
 
 
-    .item, .grid-base-post, .destaque, .miniatura, .card-post, #segundo {
+    .card, .grid-base-post, .destaque, .miniatura, .card-post, #segundo {
         width: 100%;
         margin: 10px;
     }
 
-    .item img, .grid-base-post img, .card-post img{
+    .card img, .grid-base-post img, .card-post img{
         width: 320px;
     }
 
